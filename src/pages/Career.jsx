@@ -7,9 +7,12 @@ import JobRolesShowcase from "../components/illustrations/JobRolesShowcase";
 import HiringBenefitsIllustration from "../components/illustrations/HiringBenefitsIllustration";
 import ResumeUploadIllustration from "../components/illustrations/ResumeUploadIllustration";
 
+const GOOGLE_FORM_URL = "https://forms.gle/Zy6tjPPakA3UMwEm6"; 
+
+
 const Career = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#f4f9fc] via-white to-[#f0f7fa]">
+    <div className="min-h-screen bg-linear-to-br from-[#f4f9fc] via-white to-[#f0f7fa]">
       {/* Hero Section */}
       <section className="relative w-full pt-32 md:pt-36 pb-12 md:pb-16 px-4 md:px-6 overflow-hidden">
         {/* Hero Illustration */}
@@ -24,15 +27,7 @@ const Career = () => {
             transition={{ delay: 0.2 }}
             className="flex items-center justify-center gap-2 text-gray-600 text-sm md:text-base mb-6"
           >
-            <Link
-              to="/"
-              className="flex items-center gap-1 hover:text-[#1a9bb9] transition-colors"
-            >
-              <Home className="h-4 w-4" />
-              <span>Home</span>
-            </Link>
-            <ChevronRight className="h-4 w-4" />
-            <span className="text-gray-800">Career</span>
+           
           </motion.div>
 
           <motion.h1
@@ -66,8 +61,10 @@ const Career = () => {
             transition={{ delay: 0.6 }}
           >
             <a
-              href="mailto:careers@company.com?subject=Job Application"
-              className="inline-block rounded-lg bg-gradient-to-r from-[#0b3d64] to-[#1a9bb9] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              href={GOOGLE_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-lg bg-linear-to-r from-[#0b3d64] to-[#1a9bb9] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               Apply Now
             </a>
@@ -119,7 +116,7 @@ const Career = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                className="bg-gradient-to-br from-[#0b3d64]/5 to-[#1a9bb9]/5 rounded-2xl p-6 border border-[#1a9bb9]/20 text-center"
+                className="bg-linear-to-br from-[#0b3d64]/5 to-[#1a9bb9]/5 rounded-2xl p-6 border border-[#1a9bb9]/20 text-center"
               >
                 <div className="flex justify-center mb-4">
                   <HiringBenefitsIllustration benefit="verified" className="w-20 h-20" />
@@ -134,7 +131,7 @@ const Career = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="bg-gradient-to-br from-[#0b3d64]/5 to-[#1a9bb9]/5 rounded-2xl p-6 border border-[#1a9bb9]/20 text-center"
+                className="bg-linear-to-br from-[#0b3d64]/5 to-[#1a9bb9]/5 rounded-2xl p-6 border border-[#1a9bb9]/20 text-center"
               >
                 <div className="flex justify-center mb-4">
                   <HiringBenefitsIllustration benefit="fast" className="w-20 h-20" />
@@ -149,7 +146,7 @@ const Career = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
-                className="bg-gradient-to-br from-[#0b3d64]/5 to-[#1a9bb9]/5 rounded-2xl p-6 border border-[#1a9bb9]/20 text-center"
+                className="bg-linear-to-br from-[#0b3d64]/5 to-[#1a9bb9]/5 rounded-2xl p-6 border border-[#1a9bb9]/20 text-center"
               >
                 <div className="flex justify-center mb-4">
                   <HiringBenefitsIllustration benefit="training" className="w-20 h-20" />
@@ -164,7 +161,7 @@ const Career = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
-                className="bg-gradient-to-br from-[#0b3d64]/5 to-[#1a9bb9]/5 rounded-2xl p-6 border border-[#1a9bb9]/20 text-center"
+                className="bg-linear-to-br from-[#0b3d64]/5 to-[#1a9bb9]/5 rounded-2xl p-6 border border-[#1a9bb9]/20 text-center"
               >
                 <div className="flex justify-center mb-4">
                   <HiringBenefitsIllustration benefit="support" className="w-20 h-20" />
@@ -180,7 +177,7 @@ const Career = () => {
       </section>
 
       {/* Resume Upload Section */}
-      <section className="py-12 md:py-16 px-4 md:px-6 bg-gradient-to-br from-[#0b3d64]/5 to-[#1a9bb9]/5">
+      <section className="py-12 md:py-16 px-4 md:px-6 bg-linear-to-br from-[#0b3d64]/5 to-[#1a9bb9]/5">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -196,11 +193,13 @@ const Career = () => {
               Ready to Apply?
             </h2>
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-              Submit your resume and our HR team will review your application. We accept PDF, DOC, and DOCX formats.
+              Fill out our online application form and upload your resume in PDF format. Our HR team will review your application and get back to you.
             </p>
             <a
-              href="mailto:careers@company.com?subject=Job Application"
-              className="inline-block rounded-lg bg-gradient-to-r from-[#0b3d64] to-[#1a9bb9] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              href={GOOGLE_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-lg bg-linear-to-r from-[#0b3d64] to-[#1a9bb9] px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               Submit Your Resume
             </a>
@@ -214,4 +213,3 @@ const Career = () => {
 };
 
 export default Career;
-

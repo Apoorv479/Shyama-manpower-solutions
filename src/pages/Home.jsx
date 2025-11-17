@@ -5,7 +5,7 @@ import ServicesHighlights from "../components/ServicesHighlights";
 import ClientSlider from "../components/ClientSlider";
 import Industry from "../components/Industry";
 import Footer from "../components/Footer";
-
+import WorkProcess from "../components/WorkProcess"
 const Home = () => {
   return (
     <div>
@@ -15,9 +15,7 @@ const Home = () => {
       <Industry />
       <StatsCounter />
       <ServicesHighlights />
-      <section className="pt-24 text-center bg-gray-50 min-h-screen">
-        
-      </section>
+      <WorkProcess />
       <Footer />
     </div>
   );

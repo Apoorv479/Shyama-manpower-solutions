@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Instagram, Youtube, Mail, Phone } from "lucide-react";
+import {  Mail, Phone } from "lucide-react";
 
 const Topbar = () => {
   return (
@@ -8,72 +8,25 @@ const Topbar = () => {
           {/* Left: Contact Info */}
           <div className="flex items-center gap-4 md:gap-6">
             <a
-              href="tel:+918368686070"
+              href="tel:+917982668153"
               className="flex items-center gap-1.5 hover:text-[#1a9bb9] transition-colors"
             >
               <Phone className="h-3.5 w-3.5 md:h-4 md:w-4" />
-              <span className="hidden sm:inline">+91-8368686070</span>
-              <span className="sm:hidden">+91-8368686070</span>
+              <span className="hidden sm:inline">+91-7982668153</span>
+              <span className="sm:hidden">+91-7982668153</span>
             </a>
             <span className="hidden md:inline text-white/40">|</span>
             <a
-              href="mailto:info@company.com"
+              href="info.shyamamanpowersolution1@gmail.com"
               className="flex items-center gap-1.5 hover:text-[#1a9bb9] transition-colors"
             >
               <Mail className="h-3.5 w-3.5 md:h-4 md:w-4" />
-              <span className="hidden sm:inline">info@company.com</span>
-              <span className="sm:hidden">info@company.com</span>
+              <span className="hidden sm:inline">info.shyamamanpowersolution1@gmail.com</span>
+              <span className="sm:hidden">info.shyamamanpowersolution1@gmail.com</span>
             </a>
           </div>
 
-          {/* Right: Social Media Icons */}
-          <div className="flex items-center gap-3 md:gap-4">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#1a9bb9] transition-colors"
-              aria-label="Facebook"
-            >
-              <Facebook className="h-4 w-4 md:h-5 md:w-5" />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#1a9bb9] transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter className="h-4 w-4 md:h-5 md:w-5" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#1a9bb9] transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-4 w-4 md:h-5 md:w-5" />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#1a9bb9] transition-colors"
-              aria-label="Instagram"
-            >
-              <Instagram className="h-4 w-4 md:h-5 md:w-5" />
-            </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#1a9bb9] transition-colors"
-              aria-label="YouTube"
-            >
-              <Youtube className="h-4 w-4 md:h-5 md:w-5" />
-            </a>
-          </div>
+          
         </div>
       </div>
     </div>

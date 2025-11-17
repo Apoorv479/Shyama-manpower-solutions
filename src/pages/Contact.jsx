@@ -238,13 +238,13 @@ const Contact = () => {
           variants={fadeInUp}
         >
           {/* Breadcrumb */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="flex items-center gap-2 text-white/90 text-sm md:text-base mb-4"
-          >
-            <Link
+          > */}
+            {/* <Link
               to="/"
               className="flex items-center gap-1 hover:text-[#1a9bb9] transition-colors"
             >
@@ -253,7 +253,7 @@ const Contact = () => {
             </Link>
             <ChevronRight className="h-4 w-4" />
             <span className="text-white">Contact</span>
-          </motion.div>
+          </motion.div> */}
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -270,8 +270,7 @@ const Contact = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl lg:text-2xl text-white/95 drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)] max-w-3xl mx-auto"
           >
-            We'd love to hear from you. Fill out the form and our team will
-            reach out soon.
+            "Let’s discuss your needs. We are here to help you 24/7."
           </motion.p>
         </motion.div>
       </section>
@@ -311,16 +310,16 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-gray-800 mb-1">Address</h3>
                       <p className="text-gray-600 text-sm md:text-base">
-                        B-XX, Industrial Area,
+                        3767, A2 Kanhaiya Nagar,
                         <br />
-                        New Delhi, India
+                        New Delhi- 110035
                       </p>
                     </div>
                   </motion.div>
 
                   {/* Phone */}
                   <motion.a
-                    href="tel:+918368686070"
+                    href="tel:+917982668153"
                     whileHover={{ x: 5 }}
                     className="flex items-start gap-4 group cursor-pointer"
                   >
@@ -330,7 +329,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-gray-800 mb-1">Phone</h3>
                       <p className="text-gray-600 text-sm md:text-base group-hover:text-[#1a9bb9] transition-colors">
-                        +91-8368686070
+                        +91-7982668153
                       </p>
                     </div>
                   </motion.a>
@@ -347,7 +346,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
                       <p className="text-gray-600 text-sm md:text-base group-hover:text-[#1a9bb9] transition-colors">
-                        info@company.com
+                       info.shyamamanpowersolution1@gmail.com
                       </p>
                     </div>
                   </motion.a>
@@ -355,7 +354,7 @@ const Contact = () => {
 
                 {/* WhatsApp Button */}
                 <motion.a
-                  href="https://wa.me/918368686070"
+                  href="https://wa.me/917982668153"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
@@ -417,7 +416,7 @@ const Contact = () => {
                   </h3>
                   <div className="rounded-2xl overflow-hidden border border-gray-200/50">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.5!2d77.2090!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM2JzUwLjAiTiA3N8KwMTInMzIuNCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d875.0683665012607!2d77.16353127525072!3d28.681465171106197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0246a7467d13%3A0x3e4a85b8eaa9e757!2s3767%2C%203767%2FA2%2C%20Kanhiya%20Nagar%2C%20Tri%20Nagar%2C%20New%20Delhi%2C%20Delhi%2C%20110035!5e0!3m2!1sen!2sin!4v1763378503675!5m2!1sen!2sin" 
                       width="100%"
                       height="250"
                       style={{ border: 0 }}

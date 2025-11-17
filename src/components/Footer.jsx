@@ -106,7 +106,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services/house-keeping"
+                  to="/services/housekeeping"
                   className="text-[#cbd5e1] hover:text-[#1a9bb9] transition-colors text-base"
                 >
                   Housekeeping Services
@@ -122,26 +122,26 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/services/logistics-staff"
                   className="text-[#cbd5e1] hover:text-[#1a9bb9] transition-colors text-base"
                 >
-                  Facility Management
+                  Logistics Management
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/services/industrial-workforce"
                   className="text-[#cbd5e1] hover:text-[#1a9bb9] transition-colors text-base"
                 >
-                  Fire Safety & Emergency Support
+                  Industrial Workforce  Support
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/services/office-support-staff"
                   className="text-[#cbd5e1] hover:text-[#1a9bb9] transition-colors text-base"
                 >
-                  Manpower Recruitment
+                  Ofiice Support Staff Recruitment
                 </Link>
               </li>
             </ul>
@@ -154,7 +154,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[#1a9bb9] mt-0.5 shrink-0" />
                 <span className="text-[#cbd5e1] text-base">
-                  B-XX, Industrial Area, New Delhi, India
+                3767, A2 Kanhaiya Nagar, New Delhi- 110035
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -163,7 +163,7 @@ const Footer = () => {
                   href="tel:+918368686070"
                   className="text-[#cbd5e1] hover:text-[#1a9bb9] transition-colors text-base"
                 >
-                  +91-8368686070
+                  +91-7982668153
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -172,7 +172,7 @@ const Footer = () => {
                   href="mailto:info@company.com"
                   className="text-[#cbd5e1] hover:text-[#1a9bb9] transition-colors text-base"
                 >
-                  info@company.com
+                info.shyamamanpowersolution1@gmail.com
                 </a>
               </li>
             </ul>

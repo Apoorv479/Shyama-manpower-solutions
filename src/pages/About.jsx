@@ -129,7 +129,7 @@ const About = () => {
             alt="About Us Hero"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0b3d64]/85 to-[#1a9bb9]/75" />
+          <div className="absolute inset-0 bg-linear-to-r from-[#0b3d64]/85 to-[#1a9bb9]/75" />
         </div>
         <motion.div
           className="relative z-10 flex h-full w-full items-center justify-center text-center px-6"
@@ -301,7 +301,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 px-6 bg-gradient-to-r from-[#0b3d64] to-[#1a9bb9]">
+      <section className="py-16 md:py-24 px-6 bg-linear-to-r from-[#0b3d64] to-[#1a9bb9]">
         <motion.div
           className="max-w-4xl mx-auto text-center"
           initial={{ opacity: 0, y: 30 }}
