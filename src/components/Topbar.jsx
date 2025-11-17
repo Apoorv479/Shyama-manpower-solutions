@@ -2,7 +2,7 @@ import { Facebook, Twitter, Linkedin, Instagram, Youtube, Mail, Phone } from "lu
 
 const Topbar = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-[#0b3d64] to-[#084057] text-white shadow-sm">
+    <div className="fixed top-0 left-0 right-0 z-60 bg-linear-to-r from-[#0b3d64] to-[#084057] text-white shadow-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-10 md:h-12 items-center justify-between text-xs md:text-sm">
           {/* Left: Contact Info */}

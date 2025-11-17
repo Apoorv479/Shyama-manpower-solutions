@@ -9,7 +9,7 @@ const services = [
   { name: "Industrial Workforce", path: "/services/industrial-workforce" },
   { name: "Office Support Staff", path: "/services/office-support-staff" },
   { name: "Pantry Boy", path: "/services/pantry-boy" },
-  { name: "House Keeping", path: "/services/house-keeping" },
+  { name: "House Keeping", path:"/services/housekeeping" },
   { name: "Data Entry Operator", path: "/services/data-entry-operator" },
   { name: "Receptionist", path: "/services/receptionist" },
   { name: "Logistics Staff", path: "/services/logistics-staff" },

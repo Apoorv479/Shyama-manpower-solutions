@@ -13,7 +13,7 @@ import Bouncer from "./pages/services/Bouncer";
 import IndustrialWorkforce from "./pages/services/IndustrialWorkforce";
 import OfficeSupportStaff from "./pages/services/OfficeSupportStaff";
 import PantryBoy from "./pages/services/PantryBoy";
-import HouseKeeping from "./pages/services/HouseKeeping";
+import Housekeeping from "./pages/services/Housekeeping";
 import DataEntryOperator from "./pages/services/DataEntryOperator";
 import Receptionist from "./pages/services/Receptionist";
 import LogisticsStaff from "./pages/services/LogisticsStaff";
@@ -32,7 +32,7 @@ function App() {
         <Route path="/services/industrial-workforce" element={<IndustrialWorkforce />} />
         <Route path="/services/office-support-staff" element={<OfficeSupportStaff/>} />
         <Route path="/services/pantry-boy" element={<PantryBoy />} />
-        <Route path="/services/house-keeping" element={<HouseKeeping />} />
+        <Route path="/services/housekeeping" element={<Housekeeping />} />
         <Route path="/services/data-entry-operator" element={<DataEntryOperator />} />
         <Route path="/services/receptionist" element={<Receptionist />} />
         <Route path="/services/logistics-staff" element={< LogisticsStaff/>} />

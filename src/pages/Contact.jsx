@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
@@ -102,14 +102,17 @@ const Contact = () => {
         message: "",
       });
       setFocusedField(null);
-      
+
       // Reset form element
       if (formRef.current) {
         formRef.current.reset();
       }
     } catch (error) {
       console.error("Email Error:", error);
-      toast.error(error.message || "Sorry, there was an error sending your message. Please try again or contact us directly.");
+      toast.error(
+        error.message ||
+          "Sorry, there was an error sending your message. Please try again or contact us directly."
+      );
     } finally {
       setIsLoading(false);
     }
@@ -172,12 +175,12 @@ const Contact = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#f4f9fc] via-white to-[#f0f7fa] relative overflow-hidden">
+    <div className="min-h-screen bg-linear-to-br from-[#f4f9fc] via-white to-[#f0f7fa] relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-10 w-72 h-72 bg-[#1a9bb9]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#0b3d64]/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-[#1a9bb9]/5 to-[#0b3d64]/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-linear-to-r from-[#1a9bb9]/5 to-[#0b3d64]/5 rounded-full blur-3xl"></div>
       </div>
 
       {/* Floating Particles */}
@@ -200,19 +203,24 @@ const Contact = () => {
           className="absolute inset-0"
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 10, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+          transition={{
+            duration: 10,
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
         >
           <img
             src={hero2}
             alt="Contact Us Banner"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0b3d64]/90 via-[#0b3d64]/85 to-[#1a9bb9]/80" />
+          <div className="absolute inset-0 bg-linear-to-r from-[#0b3d64]/90 via-[#0b3d64]/85 to-[#1a9bb9]/80" />
         </motion.div>
 
         {/* Animated Gradient Overlay */}
         <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-[#1a9bb9]/20 to-transparent"
+          className="absolute inset-0 bg-linear-to-r from-[#1a9bb9]/20 to-transparent"
           animate={{
             x: ["-100%", "100%"],
           }}
@@ -262,7 +270,8 @@ const Contact = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl lg:text-2xl text-white/95 drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)] max-w-3xl mx-auto"
           >
-            We'd love to hear from you. Fill out the form and our team will reach out soon.
+            We'd love to hear from you. Fill out the form and our team will
+            reach out soon.
           </motion.p>
         </motion.div>
       </section>
@@ -296,13 +305,14 @@ const Contact = () => {
                     whileHover={{ x: 5 }}
                     className="flex items-start gap-4 group"
                   >
-                    <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-[#0b3d64] to-[#1a9bb9] flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="shrink-0 w-12 h-12 rounded-xl bg-linear-to-br from-[#0b3d64] to-[#1a9bb9] flex items-center justify-center group-hover:scale-110 transition-transform">
                       <MapPin className="h-6 w-6 text-white" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-800 mb-1">Address</h3>
                       <p className="text-gray-600 text-sm md:text-base">
-                        B-XX, Industrial Area,<br />
+                        B-XX, Industrial Area,
+                        <br />
                         New Delhi, India
                       </p>
                     </div>
@@ -314,7 +324,7 @@ const Contact = () => {
                     whileHover={{ x: 5 }}
                     className="flex items-start gap-4 group cursor-pointer"
                   >
-                    <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-[#0b3d64] to-[#1a9bb9] flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="shrink-0 w-12 h-12 rounded-xl bg-linear-to-br from-[#0b3d64] to-[#1a9bb9] flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Phone className="h-6 w-6 text-white" />
                     </div>
                     <div>
@@ -331,7 +341,7 @@ const Contact = () => {
                     whileHover={{ x: 5 }}
                     className="flex items-start gap-4 group cursor-pointer"
                   >
-                    <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-[#0b3d64] to-[#1a9bb9] flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="shrink-0 w-12 h-12 rounded-xl bg-linear-to-br from-[#0b3d64] to-[#1a9bb9] flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Mail className="h-6 w-6 text-white" />
                     </div>
                     <div>
@@ -350,7 +360,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="mt-6 w-full bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white font-semibold rounded-xl px-6 py-4 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="mt-6 w-full bg-linear-to-r from-[#25D366] to-[#128C7E] text-white font-semibold rounded-xl px-6 py-4 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <MessageCircle className="h-5 w-5" />
                   <span>Chat on WhatsApp</span>
@@ -361,10 +371,22 @@ const Contact = () => {
                   <h3 className="font-semibold text-gray-800 mb-4">Follow Us</h3>
                   <div className="flex items-center gap-4">
                     {[
-                      { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+                      {
+                        icon: Facebook,
+                        href: "https://facebook.com",
+                        label: "Facebook",
+                      },
                       { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-                      { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-                      { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+                      {
+                        icon: Linkedin,
+                        href: "https://linkedin.com",
+                        label: "LinkedIn",
+                      },
+                      {
+                        icon: Instagram,
+                        href: "https://instagram.com",
+                        label: "Instagram",
+                      },
                     ].map(({ icon: Icon, href, label }) => (
                       <motion.a
                         key={label}
@@ -373,7 +395,7 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.2, y: -3 }}
                         whileTap={{ scale: 0.9 }}
-                        className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0b3d64] to-[#1a9bb9] flex items-center justify-center text-white hover:shadow-lg transition-shadow"
+                        className="w-10 h-10 rounded-xl bg-linear-to-br from-[#0b3d64] to-[#1a9bb9] flex items-center justify-center text-white hover:shadow-lg transition-shadow"
                         aria-label={label}
                       >
                         <Icon className="h-5 w-5" />
@@ -390,7 +412,9 @@ const Contact = () => {
                 className="bg-white/80 backdrop-blur-xl rounded-3xl border border-white/50 shadow-2xl overflow-hidden"
               >
                 <div className="p-4">
-                  <h3 className="text-xl font-bold text-[#0b3d64] mb-4">Find Us</h3>
+                  <h3 className="text-xl font-bold text-[#0b3d64] mb-4">
+                    Find Us
+                  </h3>
                   <div className="rounded-2xl overflow-hidden border border-gray-200/50">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.5!2d77.2090!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM2JzUwLjAiTiA3N8KwMTInMzIuNCJF!5e0!3m2!1sen!2sin!4v1234567890"
@@ -416,23 +440,21 @@ const Contact = () => {
                 className="bg-white/70 backdrop-blur-2xl rounded-3xl border border-white/50 shadow-2xl p-6 md:p-8 lg:p-10 relative overflow-hidden"
               >
                 {/* Decorative gradient border */}
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#0b3d64] via-[#1a9bb9] to-[#0b3d64] opacity-20 blur-xl -z-10"></div>
-                <div className="absolute inset-[1px] rounded-3xl bg-white/70 backdrop-blur-2xl"></div>
+                <div className="absolute inset-0 rounded-3xl bg-linear-to-r from-[#0b3d64] via-[#1a9bb9] to-[#0b3d64] opacity-20 blur-xl -z-10"></div>
+                <div className="absolute inset-px rounded-3xl bg-white/70 backdrop-blur-2xl"></div>
 
                 <div className="relative z-10">
                   <h2 className="text-3xl md:text-4xl font-bold text-[#0b3d64] mb-2">
                     Send us a Message
                   </h2>
                   <p className="text-gray-600 mb-8 text-base md:text-lg">
-                    Fill out the form below and we'll get back to you as soon as possible.
+                    Fill out the form below and we'll get back to you as soon as
+                    possible.
                   </p>
 
                   <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                     {/* Name Field */}
-                    <motion.div
-                      variants={itemVariants}
-                      className="relative"
-                    >
+                    <motion.div variants={itemVariants} className="relative">
                       <div className="relative">
                         <div className="absolute left-4 top-1/2 -translate-y-1/2 z-10">
                           <User
@@ -546,7 +568,7 @@ const Contact = () => {
                         disabled={isLoading}
                         whileHover={!isLoading ? { scale: 1.02 } : {}}
                         whileTap={!isLoading ? { scale: 0.98 } : {}}
-                        className={`w-full bg-gradient-to-r from-[#0b3d64] via-[#1a9bb9] to-[#0b3d64] bg-size-200 bg-pos-0 hover:bg-pos-100 text-white font-semibold rounded-2xl px-8 py-5 text-lg flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl transition-all duration-500 ${
+                        className={`w-full bg-linear-to-r from-[#0b3d64] via-[#1a9bb9] to-[#0b3d64] bg-size-200 bg-pos-0 hover:bg-pos-100 text-white font-semibold rounded-2xl px-8 py-5 text-lg flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl transition-all duration-500 ${
                           isLoading
                             ? "opacity-70 cursor-not-allowed"
                             : "hover:scale-105"
